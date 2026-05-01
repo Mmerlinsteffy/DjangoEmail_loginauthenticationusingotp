@@ -1,0 +1,146 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+}
+
+/* Form Container */
+form{
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Headings */
+h1{
+    position: absolute;
+    top: 80px;
+    color: #1e3a8a;
+    font-size: 34px;
+}
+
+h3{
+    position: absolute;
+    top: 130px;
+    color: #555;
+    font-size: 20px;
+}
+
+/* Labels */
+label{
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,0.4);
+}
+
+/* Buttons */
+input[type="submit"]{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+input[type="submit"]:hover{
+    background: #1d4ed8;
+}
+
+/* Container */
+.otp-container{
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 380px;
+}
+
+/* Heading */
+.otp-container h1{
+    color: #1e3a8a;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* OTP Inputs */
+.otp-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.otp-box input{
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+.otp-box input:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,0.4);
+}
+
+/* Verify Button */
+input[type="submit"]{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+input[type="submit"]:hover{
+    background: #1d4ed8;
+}

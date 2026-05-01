@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='{% static "css/style.css" %}'>
+</head>
+<div class="otp-container">
+    <h1>OTP VERIFICATION</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <div class="otp-box">
+            <input type="text" name="otp1" maxlength="1">
+            <input type="text" name="otp2" maxlength="1">
+            <input type="text" name="otp3" maxlength="1">
+            <input type="text" name="otp4" maxlength="1">
+        </div>
+
+        <input type="submit" value="VERIFY">
+        <p>{{error}}</p>
+    </form>
+</div>

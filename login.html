@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='{% static "css/style.css" %}'>
+</head>
+<body>
+    <div class='container'>
+    <h1>Create an account</h1>
+   
+    <form  method="post">
+        {% csrf_token %}
+        <label for="name">Full Name</label><input type="text" name="name" id="name">
+        <label for="mail">Email Id:</label><input type="email" name="mail" id="mail">
+        <label for="pword">Password:</label><input type="password" name="pword" id="pword">
+        <input type="submit" value="LOGIN" name="acc">
+        <input type="submit" value="SIGNUP" name="acc">
+        <p>{{error}}</p>
+    </form>
+</div>
+</body>
+</html>
